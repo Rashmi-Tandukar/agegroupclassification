@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>a</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ 
+</head>
+<body>
+	<h1>Age Group Classification</h1>
+
+<nav>
+    <a href="index.html"><u> Home </u></a>
+    <a href="upload.html"><u> Upload </u></a>
+    <a href="contact.html"><u>Contact </u></a>
+    
+</nav>
+<br><br><br>
+
+ <input type="file" id="imageInput" accept="image/*">
+    <button onclick="classifyAge()">Classify Age</button>
+
+    <div id="result"></div>
+ 
+    <script>
+
+        
+        function classifyAge() {
+            const input = document.getElementById('imageInput');
+            const resultDiv = document.getElementById('result');
+
+            if (input.files.length === 0) {
+                alert('Please select an image.');
+                return;
+            }
+
+            const file = input.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+
+// Use serverResponse as needed
+
+            const serverResponse = {
+                ageGroup: '28-35',
+            };
+
+            // Display the result
+            resultDiv.innerHTML = `<p> Your Predicted Age Group is falls under the range of : ${serverResponse.ageGroup}</p>`;
+        }
+    </script>
+
+
+     
+ 
+<br><br><br><br><br><br><br><br><br><br>
+ <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+    <p>Copyright &copy; 2024 Age Group Classification <br> <br></p>
+</footer>
+</body>
+</html>
