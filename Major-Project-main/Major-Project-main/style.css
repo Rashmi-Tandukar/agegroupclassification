@@ -1,0 +1,44 @@
+body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+h1{
+	padding: 40px;
+	color: black;
+	border: 1px solid black;
+}
+nav{
+	overflow: hidden;
+	background-color: purple;
+}
+nav a{
+	float:left;
+	color:white;
+	padding:14px 16px;
+	text-decoration: none
+	}
+	nav a:hover{
+		background-color: black;
+	}
+	footer{
+		clear: both;
+		background-color: pink;
+	padding: 20px;
+	text-align:center;
+	 color:black;
+	 border: 1px solid black;
+	}
+
+section{
+	background-color: pink;
+}
+script{
+	background-color: pink;
+}
